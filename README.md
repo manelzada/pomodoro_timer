@@ -1,4 +1,4 @@
-# h1 Pomodoro Timer
+# Pomodoro Timer
 
 Um cronometro pomodoro feito em flutter utilizando mobx e flutter modular
 
