@@ -30,7 +30,7 @@ class TimerComponent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            isWorking == true ? 'Hora de Trabalhar' : 'Hora de Descançar',
+            isWorking == true ? 'Hora de Trabalhar' : 'Hora de Descansar',
             style: const TextStyle(
               fontSize: 40,
               color: Colors.white,
