@@ -30,11 +30,11 @@ class InsertValue extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: increment,
-              child: const Icon(Icons.arrow_upward),
               style: ElevatedButton.styleFrom(
-                  shape: CircleBorder(),
+                  shape: const CircleBorder(),
                   primary: isWorking == false ? Colors.green : Colors.red),
+              onPressed: value >= 60 ? null : increment,
+              child: const Icon(Icons.arrow_upward),
             ),
             const SizedBox(width: 10),
             Text(
@@ -46,7 +46,7 @@ class InsertValue extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                   shape: const CircleBorder(),
                   primary: isWorking == false ? Colors.green : Colors.red),
-              onPressed: decrement,
+              onPressed: value <= 0 ? null : decrement,
               child: const Icon(Icons.arrow_downward),
             ),
           ],
